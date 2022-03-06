@@ -1,0 +1,33 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <div class="wrapper fadeInDown">
+        <div id="formContent">
+
+            <br>
+            
+            <form method="POST" action="Cadastrar.php" enctype="multipart/form-data">
+            <input type="text" id="nome" class="fadeIn first" name="nome" placeholder="nome" required>
+            <input type="email" id="login" class="fadeIn second" name="email" placeholder="email" required>
+            <input type="password" id="senha" class="fadeIn third" name="senha" placeholder="senha" required>
+            <input type="password" id="confirmaSenha" class="fadeIn fourth" name="confirmaSenha" placeholder="confirme a senha" required>
+            <input type="submit" class="fadeIn fifth" value="Regristrar">
+            </form>
+
+            <div id="formFooter">
+            <a class="underlineHover" href="./index.html">Já possui uma conta? Faça login!</a>
+            </div>
+
+        </div>
+        </div>
+    </body>
+</html>
