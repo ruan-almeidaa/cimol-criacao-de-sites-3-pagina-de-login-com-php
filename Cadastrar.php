@@ -20,8 +20,12 @@ isset($_POST['confirmaSenha']) && !empty($_POST['confirmaSenha'])
 
         try{
             $u->cadastrar($nome, $email, $senha);
-            $u->logar($email, $senha);
-            header("location: paginaDeUsuario.html");
+            ?>
+                <script>
+                        window.alert("Cadastro feito com sucesso, faça login para continuar!");
+                        window.location.href = "index.html";
+                </script>
+            <?php
 
         }catch(Exception $e){
             header("location: index.html");

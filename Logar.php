@@ -7,7 +7,7 @@ if(isset($_POST['email']) && !empty($_POST['email']) && isset($_POST['senha']) &
 
     $u = new Usuario();
     $email = addslashes($_POST['email']);
-    $senha = addslashes($_POST['senha']);
+    $senha = addslashes(md5($_POST['senha']));
 
     if($u->logar($email, $senha) == true){
 
